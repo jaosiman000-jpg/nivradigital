@@ -1,6 +1,6 @@
 /* CSS Reset & Variables */
 :root {
-  --bg-color: #121214;
+  --bg-color: #0b0b0d;
   --accent-orange: #ff6600;
   --card-bg: #ffffff;
   --text-dark: #111113;
@@ -26,10 +26,26 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2.5rem 1.25rem;
+  position: relative;
+  overflow-x: hidden;
 }
 
-/* Main Container */
+/* Beams Background Canvas */
+.beams-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(15px);
+}
+
+/* Main Container (above animated background) */
 .container {
+  position: relative;
+  z-index: 10;
   width: 100%;
   max-width: 440px;
   display: flex;
@@ -46,7 +62,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
-/* Larger Circular Avatar with clean solid orange border */
+/* Circular Avatar with solid orange border */
 .avatar-wrapper {
   width: 128px;
   height: 128px;
@@ -75,6 +91,7 @@ body {
   color: var(--text-light);
   letter-spacing: 0.8px;
   text-transform: uppercase;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 /* Links Section */
@@ -86,7 +103,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
-/* Cards Design with Solid Block Color Shadow (Always Visible) */
+/* Cards Design with Solid Block Color Shadow */
 .link-card {
   display: flex;
   align-items: center;
@@ -96,12 +113,12 @@ body {
   text-decoration: none;
   color: var(--text-dark);
   border: 2px solid #ffffff;
-  /* Sombra sólida de cor direta na parte de baixo, visível o tempo todo (sem desfoque de nuvem) */
+  /* Sombra sólida de cor direta na parte de baixo */
   box-shadow: 0 7px 0 0 var(--accent-orange);
   transition: var(--transition);
 }
 
-/* Hover State - Sutil efeito de clique/pressionamento */
+/* Hover State */
 .link-card:hover {
   transform: translateY(2px);
   box-shadow: 0 5px 0 0 var(--accent-orange);
