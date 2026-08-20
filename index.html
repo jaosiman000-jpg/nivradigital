@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIVRA DIGITAL | Links</title>
+  <meta name="description" content="Links oficiais da NIVRA DIGITAL - Entre em contato via WhatsApp ou acompanhe no Instagram.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Nivra logo.png">
+
+  <!-- Google Fonts: Fira Code for code font, Inter for UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <main class="container">
+    <!-- Header Section -->
+    <header class="profile-header">
+      <div class="avatar-wrapper">
+        <img src="Nivra logo.png" alt="NIVRA DIGITAL Logo" class="avatar-img">
+      </div>
+      <h1 class="code-title">&lt;NIVRA DIGITAL/&gt;</h1>
+      <p class="subtitle">// Soluções Digitais & Tecnologia</p>
+    </header>
+
+    <!-- Links Section -->
+    <div class="links-wrapper">
+      <!-- WhatsApp Card -->
+      <a href="https://wa.me/5531972350820" target="_blank" rel="noopener noreferrer" class="link-card whatsapp-card">
+        <div class="card-icon">
+          <img src="whatsapp-svgrepo-com.svg" alt="WhatsApp" class="icon-svg">
+        </div>
+        <div class="card-content">
+          <span class="card-title">WhatsApp</span>
+          <span class="card-subtext">+55 31 97235-0820</span>
+        </div>
+        <div class="card-arrow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Instagram Card -->
+      <a href="https://www.instagram.com/nivra.dgtl/" target="_blank" rel="noopener noreferrer" class="link-card instagram-card">
+        <div class="card-icon">
+          <img src="instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram" class="icon-svg">
+        </div>
+        <div class="card-content">
+          <span class="card-title">Instagram</span>
+          <span class="card-subtext">@nivra.dgtl</span>
+        </div>
+        <div class="card-arrow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© <span id="year"></span> NIVRA DIGITAL. Todos os direitos reservados.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
